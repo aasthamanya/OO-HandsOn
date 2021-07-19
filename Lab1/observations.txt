@@ -1,0 +1,15 @@
+Observations for LAB 1:
+
+1. In the class AccManager1 the value for different attributes like account number, 
+name and balance is set by directly accessing those variables from the Account class using the dot operator. 
+The methods fillAccountData() is responsible for setting the values and displayAccountData() is responsible for 
+displaying the account data.
+
+2. In the class AccManager1 the value for different attributes like account number, 
+name and balance is set calling the set and get methods from the Account class which in turn uses 'this' operator
+to set the values.The methods fillAccountData() is responsible for calling the set methods of the Account class
+and displayAccountData() is responsible for calling the get methods from the account class to display the data.
+
+3. TestMain class is where two different objects are created/instantiated one for AccManager1 class and the other for 
+AccManager2 class and fillAccountdata() and displayAccountData methods are called.
+ 
