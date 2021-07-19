@@ -26,24 +26,18 @@ public class EmployeeDemo {
 		System.out.println("Address Pin : ");
 		String pin = Console.readLine();
 		
-		
-
-
+		emp.storeData(empId, name, addrLine1, addrLine2, city, pin);
 	}
 	public static void showData(Employee emp) {
 		
-		System.out.println("Emp Id : ");
-		System.out.println("Name : ");
+		System.out.println("Emp Id : "+emp.empId);
+		System.out.println("Name : "+emp.name);
 		System.out.println("--------------------------------------------");
-		System.out.println("Addr Line1 : ");
-		System.out.println("Addr Line2 : ");
-		System.out.println("City : ");
-		System.out.println("Pin : ");
+		System.out.println("Addr Line1 : "+emp.addr.address1);
+		System.out.println("Addr Line2 : "+emp.addr.address2);
+		System.out.println("City : "+emp.addr.city);
+		System.out.println("Pin : "+emp.addr.pin);
 		System.out.println("--------------------------------------------");
-
-		
-
-
 	}
 }
 

@@ -19,6 +19,21 @@ public class EmployeeReport {
 		displayHeader();
 		
 		// Complete the logic 	
+		for(int i=0;i<empArr.length;i++)
+		{
+			SalaryCalculator sc = new SalaryCalculator();
+
+			Employee emp = empArr[i];
+			RoleBuilder rb = new RoleBuilder();
+			String role = rb.getRoleDescription(emp.empRoleId);
+			String eid = emp.empId;
+			String name = emp.name;
+			double basic = emp.empSalary;
+			double hra = sc.hra;
+			double allowance = sc.getAllowance(emp);
+			double salary = sc.getSalary(emp);
+			System.out.printf("%s\t%s\t%s\t%f\t%f\t%f\t%f\n",name,eid,role,basic,hra,allowance,salary);
+		}
 		
 		displayFooter(empArr.length);
 		
